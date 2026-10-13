@@ -30,8 +30,8 @@ else
     echo "python is not installed." >&2
 fi
 
-if [ -x "$(command -v pip)" ]; then
-    pip --version
+if [ -x "$(command -v uv)" ]; then
+    uv --version
 else
-    echo "pip is not installed." >&2
+    echo "uv is not installed." >&2
 fi
